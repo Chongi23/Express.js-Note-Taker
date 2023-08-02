@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static('public'));
 //This code tells the application to exicute the 'apiRoutes' function for each erquest that is made to the './api' route.
 app.use('./api', apiRoutes);
-//This code tells the applucation to execute the 'hrmlRoutes' function for each request that is made to the root route('/').
+//This code tells the application to execute the 'htmlRoutes' function for each request that is made to the root route('/').
 app.use('/', htmlRoutes) 
 
 
