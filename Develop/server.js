@@ -1,20 +1,20 @@
 //Import Express
 const express = require('express');
-//Import 'path'(built in Node.JS package) to resolve path of files that are located on the server. 
-const path = require('path');
-//Require 'fs' to READ and WRITE to the 'FileSystem'
-const fs = require('fs');
 //Initialize instance of Express
 const app = express();
-
-//===========================================//
-
 // Set the port of our application//process.env.PORT means: whatever is in the environment variable PORT, or 3001 if there's nothing there.
 const PORT = process.env.PORT || 3001;
+//The `apiRoutes` file contains the routes for the API endpoints
+const apiRoutes = require('./routes/apiRoutes');
+// The HTML Routes are defined in a separate route file called 'htmlRoutes'
+const htmlRoutes = require('./routes/htmlRoutes');
 
+//**fs and path will be use in another area, here we are just presenting, not reading or writing to the filesystem**
 
+//The "app.use(express.jason())" function is used to configure a Node.js applicaition to accept JSON data from requests.
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+//This function "express.urlencoded()" is used to parse the request body into a JavaScript object. The `extended` option is set to true, which means that the function will parse the request body using the extended parsing rules. This will allow the function to parse more complex request bodies.
+app.use(express.urlencoded({ extended: true }))
 
 //Static middleware pointing to the public folder
 app.use(express.static('public'));
