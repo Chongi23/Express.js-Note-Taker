@@ -26,6 +26,8 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
+[Note-Taker-Video.webm](https://github.com/Chongi23/Express.js-Note-Taker/assets/129767491/7e1b2d60-8429-45c7-8063-09c608e22e99)
+
 
 ### Bonus: +10 Points
 
