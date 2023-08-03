@@ -28,6 +28,8 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 GitHub Deployed Page: https://chongi23.github.io/Express.js-Note-Taker/
+
+
 [Note-Taker-Video.webm](https://github.com/Chongi23/Express.js-Note-Taker/assets/129767491/7e1b2d60-8429-45c7-8063-09c608e22e99)
 
 
